@@ -1,0 +1,19 @@
+nav { 
+  margin: 0;
+
+  .nav-item { 
+      display: inline-block; margin: 0 10px;
+
+      background-color: blue;
+
+      @include roundCorners(8px);
+      @include addPadding(5px 10px);
+
+      a { 
+          cursor: pointer; text-decoration: none; color: white;
+
+          &:hover { color: red; }
+      }
+  }
+
+}

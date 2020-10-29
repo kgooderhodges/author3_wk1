@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Working with Sass</title>
+    <!-- never link your sass files (.scss) - those are working files only -->
+    <link rel="stylesheet" href="css/master.css" />
+  </head>
+  <body>
+    <main id="app">
+      <h1 class="hidden">Welcome to my awesome app</h1>
+      <!-- this is an HTML component -->
+      <nav class="main-nav">
+        <li class="list-item"><a href="#">list 1</a></li>
+        <li class="list-item"><a href="#">list 2</a></li>
+        <li class="list-item"><a href="#">list 3</a></li>
+        <li class="list-item"><a href="#">list 4</a></li>
+      </nav>
+      <!-- end component -->
+
+      <!-- add a users section here -->
+      <section class="user-section">
+        <!-- <h1 class="hidden">Our Users</h1>
+        <h2 class="user-name"></h2>
+        <p class="user-role"></p>
+        <p class="user-nickname"></p> -->
+      </section>
+      <!-- end users section -->
+    </main>
+
+    <footer>this is a simple footer</footer>
+
+    <!-- templates go here (these don't get remdered on the page) -->
+    <template id="profs-template">
+      <div class="user">
+        <h1 class="hidden">Our Users</h1>
+        <img src="temp.jpg" alt="user image">
+        <h2 class="user-name"></h2>
+        <p class="user-role"></p>
+        <p class="user-nickname"></p>
+      </div>
+    </template>
+    <!-- end templates -->
+    <script src="js/main.js" type="module"></script>
+  </body>
+</html>
