@@ -20,6 +20,6 @@
         // var_dump($pdo);
         // echo "you're in! enjoy the show";
     } catch (PDOException $exception) {
-        echo "Connection error: " . $exception->getMessage();
+        echo 'Connection error: ' . $exception->getMessage();
         exit();
     }
